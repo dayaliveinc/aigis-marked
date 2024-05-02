@@ -4,7 +4,7 @@
   "description": "Custom markdown renderer for aigis used with marked.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha **/*.test.mjs"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,11 @@
   "homepage": "https://github.com/pxgrid/aigis-marked#readme",
   "dependencies": {
     "lodash": "^4.17.21",
-    "marked": "^4.3.0",
+    "marked": "^12.0.2",
     "prismjs": "^1.29.0"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0"
   }
 }
